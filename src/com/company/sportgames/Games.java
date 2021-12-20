@@ -1,7 +1,11 @@
 package com.company.sportgames;
 
 public class Games {
-    public String name = "All";
+    private String name = "AllGame";
+
+    public Games(){
+
+    }
 
     public void setName(String nameValue) {
         this.name = nameValue;
@@ -10,4 +14,5 @@ public class Games {
     public String getName() {
         return this.name;
     }
+
 }

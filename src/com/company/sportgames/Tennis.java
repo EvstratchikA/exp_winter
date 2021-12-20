@@ -1,11 +1,11 @@
 package com.company.sportgames;
 
-public class TeamGames extends Games{
-    private String name = "TeamGame";
-    private int age = 25;
-    private int person = 20;
+public class Tennis extends TeamGames{
+    private String name = "Tennis";
+    private int age = 20;
+    private int person = 2;
 
-    public TeamGames(){
+    public Tennis() {
 
     }
 

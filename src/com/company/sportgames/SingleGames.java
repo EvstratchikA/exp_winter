@@ -1,9 +1,13 @@
 package com.company.sportgames;
 
 public class SingleGames extends Games {
-    public String name = "SingleGame";
-    public int age = 18;
-    public int person = 10;
+    private String name = "SingleGame";
+    private int age = 23;
+    private int person = 1;
+
+    public SingleGames(){
+
+    }
 
     public void setName(String nameValue) {
         this.name = nameValue;
@@ -17,10 +21,11 @@ public class SingleGames extends Games {
     public int getAge() {
         return this.age;
     }
-    public void setNumber(String personValue) {
+    public void setPerson(String personValue) {
         this.name = personValue;
     }
     public int getPerson() {
         return this.person;
     }
+
 }
