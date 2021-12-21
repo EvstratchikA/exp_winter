@@ -8,6 +8,9 @@ public class FigureSkating extends SingleGames {
     public FigureSkating() {
 
     }
+    public FigureSkating (String name){
+        this.name = name;
+    }
 
     public void setName(String nameValue) {
         this.name = nameValue;
@@ -31,6 +34,12 @@ public class FigureSkating extends SingleGames {
 
     public int getPerson() {
         return this.person;
+
+    }
+    public void printInfo() {
+        System.out.println("Name: " + this.name);
+        System.out.println("Age: " + this.age);
+        System.out.println("Person: " + this.person);
 
     }
 }

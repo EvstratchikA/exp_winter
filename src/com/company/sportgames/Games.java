@@ -1,10 +1,15 @@
 package com.company.sportgames;
 
-public class Games {
-    private String name = "AllGame";
+public abstract class Games {
+    public String name = "AllGames";
+
+    public abstract void play();
 
     public Games(){
+    }
 
+    public Games (String name){
+        this.name = name;
     }
 
     public void setName(String nameValue) {

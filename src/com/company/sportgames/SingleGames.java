@@ -9,6 +9,10 @@ public class SingleGames extends Games {
 
     }
 
+    public SingleGames (String name){
+        this.name = name;
+    }
+
     public void setName(String nameValue) {
         this.name = nameValue;
     }
@@ -28,4 +32,15 @@ public class SingleGames extends Games {
         return this.person;
     }
 
+    public void printInfo() {
+        System.out.println("Name: " + this.name);
+        System.out.println("Age: " + this.age);
+        System.out.println("Person: " + this.person);
+
+    }
+
+    @Override
+    public void play() {
+        System.out.println("Active");
+    }
 }
