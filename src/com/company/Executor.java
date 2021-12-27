@@ -1,17 +1,37 @@
 package com.company;
 
-import com.company.sportgames.*;
-import com.company.stadium.Stadium;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Executor {
     public static void main(String[] args) {
 
-        Tennis tennis = new Tennis();
-        FigureSkating figureSkating = new FigureSkating();
-        Basketball basketball = new Basketball();
-        Darts darts = new Darts();
-        Golf golf = new Golf();
-        Hockey hockey = new Hockey();
+        List<String> list = new ArrayList<String>();
+        list.add("One");
+        list.add("Two");
+        list.add("Three");
+        list.add("Four");
+        list.add("Five");
+
+        for(String str : list){
+            System.out.println(str);
+        }
+
+        System.out.println("======");
+
+        list.remove(1);
+
+        for(String str : list){
+            System.out.println(str);
+        }
+
+
+//        Tennis tennis = new Tennis();
+//        FigureSkating figureSkating = new FigureSkating();
+//        Basketball basketball = new Basketball();
+//        Darts darts = new Darts();
+//        Golf golf = new Golf();
+//        Hockey hockey = new Hockey();
 
 //        Athlete athlete = new Athlete();
 //        System.out.println("Name: Alex");
@@ -31,18 +51,18 @@ public class Executor {
 //        judge.say();
 //        judge.walk();
 
-        Stadium stadium = new Stadium();
-        System.out.println("Stadium: Dinamo");
-
-        stadium.setChampion(basketball);
-        basketball.medal();
-        basketball.win();
-        System.out.println(stadium.getChampion().printInfoChampion());
-
-        stadium.setChampion(figureSkating);
-        figureSkating.medal();
-        figureSkating.win();
-        System.out.println(stadium.getChampion().printInfoChampion());
+//        Stadium stadium = new Stadium();
+//        System.out.println("Stadium: Dinamo");
+//
+//        stadium.setChampion(basketball);
+//        basketball.medal();
+//        basketball.win();
+//        System.out.println(stadium.getChampion().printInfoChampion());
+//
+//        stadium.setChampion(figureSkating);
+//        figureSkating.medal();
+//        figureSkating.win();
+//        System.out.println(stadium.getChampion().printInfoChampion());
 
 //        stadium.setChampion(tennis);
 //        stadium.setChampion(darts);
