@@ -1,71 +1,55 @@
 package com.company;
 
-import com.company.human.*;
 import com.company.sportgames.*;
+import com.company.stadium.Stadium;
 
 public class Executor {
     public static void main(String[] args) {
 
-
-        Games game1 = new Games() {
-            @Override
-            public void play() {
-
-            }
-        };
-        System.out.println(game1.getName());
-
-        TeamGames one = new TeamGames();
-        System.out.println(one.getName());
-        one.play();
-
         Tennis tennis = new Tennis();
-        tennis.setName("Tennis");
-        tennis.printInfo();
-
-
-        System.out.println("=====");
-
-
-        Games game2 = new Games() {
-            @Override
-            public void play() {
-
-            }
-        };
-        System.out.println(game2.getName());
-
-        SingleGames two = new SingleGames();
-        System.out.println(two.getName());
-        two.play();
-
         FigureSkating figureSkating = new FigureSkating();
-        figureSkating.setName("FigureSkating");
-        figureSkating.printInfo();
+        Basketball basketball = new Basketball();
+        Darts darts = new Darts();
+        Golf golf = new Golf();
+        Hockey hockey = new Hockey();
 
+//        Athlete athlete = new Athlete();
+//        System.out.println("Name: Alex");
+//        athlete.run();
+//        athlete.say();
+//        athlete.walk();
 
-        System.out.println("======");
+//        Fanat fanat = new Fanat();
+//        System.out.println("Name: Tom");
+//        fanat.run();
+//        fanat.say();
+//        fanat.walk();
+//
+//        Judge judge = new Judge();
+//        System.out.println("Name: Jack");
+//        judge.run();
+//        judge.say();
+//        judge.walk();
 
+        Stadium stadium = new Stadium();
+        System.out.println("Stadium: Dinamo");
 
+        stadium.setChampion(basketball);
+        basketball.medal();
+        basketball.win();
+        System.out.println(stadium.getChampion().printInfoChampion());
 
-        Athlete athlete = new Athlete();
-        System.out.println("Name: Alex");
-        athlete.run();
-        athlete.say();
-        athlete.walk();
+        stadium.setChampion(figureSkating);
+        figureSkating.medal();
+        figureSkating.win();
+        System.out.println(stadium.getChampion().printInfoChampion());
 
-        Fanat fanat = new Fanat();
-        System.out.println("Name: Tom");
-        fanat.run();
-        fanat.say();
-        fanat.walk();
-
-        Judge judge = new Judge();
-        System.out.println("Name: Jack");
-        judge.run();
-        judge.say();
-        judge.walk();
-
+//        stadium.setChampion(tennis);
+//        stadium.setChampion(darts);
+//        stadium.setChampion(golf);
+//        stadium.setChampion(hockey);
     }
+
+
 
 }

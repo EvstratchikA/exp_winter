@@ -20,16 +20,25 @@ public class Judge implements IHuman{
 
     @Override
     public void walk() {
-        System.out.println("Fast");
+        System.out.println("Walk: Fast");
+    }
+    public void walk(String speed) {
+        System.out.println(speed);
     }
 
     @Override
     public void say() {
-        System.out.println("Stop!");
+        System.out.println("Say: Stop!");
+    }
+    public void say(String voice) {
+        System.out.println(voice);
     }
 
     @Override
     public void run() {
-        System.out.println("Yes");
+        System.out.println("Run: Yes");
+    }
+    public void run(String distance) {
+        System.out.println(distance);
     }
 }

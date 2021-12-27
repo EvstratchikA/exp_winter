@@ -1,6 +1,6 @@
 package com.company.sportgames;
 
-public class Golf extends SingleGames {
+public class Golf extends SingleGames implements IChampion {
     private String name = "Golf";
     private int age = 18;
     private int person = 1;
@@ -41,5 +41,26 @@ public class Golf extends SingleGames {
         System.out.println("Age: " + this.age);
         System.out.println("Person: " + this.person);
 
+    }
+
+    @Override
+    public void win() {
+        System.out.println(this.name + "Win: Yes");
+    }
+    public void win(String success) {
+        System.out.println(success);
+    }
+
+    @Override
+    public void medal() {
+        System.out.println(this.name + "Medal: Gold");
+    }
+    public void medal(String reward) {
+        System.out.println(reward);
+    }
+
+    @Override
+    public String printInfoChampion() {
+        return "Champion";
     }
 }

@@ -1,18 +1,20 @@
 package com.company.human;
 
-public class Fanat implements IHuman{
+public class Fanat implements IHuman {
     public String name;
 
     public Fanat() {
 
     }
-    public Fanat (String name){
+
+    public Fanat(String name) {
         this.name = name;
     }
 
     public void setName(String nameValue) {
         this.name = nameValue;
     }
+
     public String getName() {
         return this.name;
     }
@@ -20,16 +22,28 @@ public class Fanat implements IHuman{
 
     @Override
     public void walk() {
-        System.out.println("Slow");
+        System.out.println("Walk: Slow");
+    }
+
+    public void walk(String speed) {
+        System.out.println(speed);
     }
 
     @Override
     public void say() {
-        System.out.println("Hello");
+        System.out.println("Say: Hello");
+    }
+
+    public void say(String voice) {
+        System.out.println(voice);
     }
 
     @Override
     public void run() {
-        System.out.println("No");
+        System.out.println("Run: No");
+    }
+
+    public void run(String distance) {
+        System.out.println(distance);
     }
 }

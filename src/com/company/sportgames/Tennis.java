@@ -1,6 +1,6 @@
 package com.company.sportgames;
 
-public class Tennis extends TeamGames{
+public class Tennis extends TeamGames implements IChampion{
     private String name = "Tennis";
     private int age = 20;
     private int person = 2;
@@ -38,4 +38,24 @@ public class Tennis extends TeamGames{
 
     }
 
+    @Override
+    public void win() {
+        System.out.println(this.name + "Win: Yes");
+    }
+    public void win(String success) {
+        System.out.println(success);
+    }
+
+    @Override
+    public void medal() {
+        System.out.println(this.name + "Medal: Silver");
+    }
+    public void medal(String reward) {
+        System.out.println(reward);
+    }
+
+    @Override
+    public String printInfoChampion() {
+        return "Champion";
+    }
 }

@@ -43,4 +43,7 @@ public class SingleGames extends Games {
     public void play() {
         System.out.println("Active");
     }
+    public void play(String action){
+        System.out.println(action);
+    }
 }
