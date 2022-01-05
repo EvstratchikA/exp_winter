@@ -1,6 +1,6 @@
 package com.company.sportgames;
 
-public class TeamGames extends Games{
+public abstract class TeamGames extends Games{
     private String name = "TeamGame";
     private int age = 25;
     private int person = 20;
